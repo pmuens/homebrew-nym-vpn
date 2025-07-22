@@ -11,4 +11,10 @@ cask "nym-vpn" do
   homepage "https://nym.com"
 
   app "NymVPN.app"
+
+  zap trash: [
+    "~/Library/Caches/net/nymtech.vpn",
+    "~/Library/Preferences/net.nymtech.vpn.plist"
+    "~/Library/Application Support/net.nymtech.vpn",
+  ]
 end
